@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'Cambiar_contraseña.css')}}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <title>Cambiar contraseña</title>
+</head>
+<body>
+
+    <div class = "Cambiar_congraseña-grid">
+        <div class="form_conteiner_grid">
+                <form action="" method="post">
+                    <div class="form_box">
+                        <h1 id = form_title>Nueva contraseña</h1>
+                        <label class = "label-nueva-contraseña">Nueva contraseña</label>
+                        <input type="text" class = "Input-nueva-contraseña" placeholder="&#xf023; Contraseña" style="font-family:Arial, FontAwesome"  >
+                        <label class = "label-repetir_contraseña">Repita su contraseña</label>
+                        <input type="password" class = "Input-repetir_contraseña" placeholder="&#xf023; Contraseña" style="font-family:Arial, FontAwesome"  >
+                        <input type="submit" value="Ingresar" class="form-btn">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
