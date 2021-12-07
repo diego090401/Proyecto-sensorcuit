@@ -9,6 +9,13 @@ class DATABASE():
     database = 'Proyecto',
     )
     cursor = DATAB.cursor()
+    
+    #Funcion para insertar un nuevo usuario desde el cliente a la base de datos
+    def Crear_usuario(Usuario_brindado,Mail_brindado, DATAB= DATAB, cursor=cursor):
+        Nuevo_usuario = Usuario_brindado
+        Nuevo_mail = Mail_brindado
+
+
     def InsertIntoUsuarios(DATAB= DATAB, cursor=cursor):
         NewUsername = str(input("Ingrese su nombre de usuario :"))
         NewMail = str(input("Ingrese su email: "))

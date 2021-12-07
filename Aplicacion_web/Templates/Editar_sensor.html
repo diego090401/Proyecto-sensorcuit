@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'Editar_sensor.css')}}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="shortcut icon" href="favicon.png">
+    <title>Editar sensor</title>
+</head>
+<body>
+
+    <div class = "Registrarse-grid">
+        <div class="form_conteiner_grid">
+                <form action="" method="post">
+                    <div class="form_box">
+                        <h1 id = form_title>Editar sensor </h1>
+
+                        <label class = "label-nombre">Nombre</label>
+                        <input type="text" class = "Input-nombre" placeholder="&#xf2b9; Nombre" style="font-family:Arial, FontAwesome"  >
+                        <label class = "label-ubicacion">Ubicación</label>
+                        <input type="text" class = "Input-ubicacion" placeholder="&#xf041; Ubicación" style="font-family:Arial, FontAwesome"  >
+                        <input type="submit" value="Editar" class="form-btn">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

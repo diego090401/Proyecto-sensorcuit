@@ -1,0 +1,169 @@
+html {
+    height: max-content;
+    
+}
+body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #f79326;
+    
+}
+.Registrarse-grid {
+    height: 900px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    
+}
+.form_conteiner_grid {
+    align-self: center;
+    grid-column: 2;
+}
+.form_box {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(19, 1fr);
+    height: 750px;
+    background-color:#FAD089; 
+    border-radius: 20px;
+    border: 10px solid #3B8183;
+}
+#form_title {
+    font-family: "Verdana";
+    font-size: 30px;
+    grid-column: 1;
+    margin: 10px;
+    padding: 0px;
+    grid-row: 1;
+    justify-self: center;
+}
+
+
+.label-email {
+    grid-column: 1;
+    margin-top: 10px;
+    font-family: "Verdana";
+    font-size: 30px;
+    grid-row: 2/3;
+}
+.Input-email {
+    grid-column: 1;
+    color: none;
+    font-family: "Verdana";
+    font-size: 25px;
+    grid-row: 3/5;
+    border: none;
+    background-color: #FAD089;
+    border-bottom: 3px solid #80bebf;
+    transition: 0.5s;
+}
+.label-nombre {
+    grid-column: 1;
+    margin-top: 10px;
+    font-family: "Verdana";
+    font-size: 30px;
+    grid-row: 6/7;
+}
+.Input-nombre {
+    grid-column: 1;
+    color: none;
+    font-family: "Verdana";
+    font-size: 25px;
+    grid-row: 7/9;
+    border: none;
+    background-color: #FAD089;
+    border-bottom: 3px solid #80bebf;
+    transition: 0.5s;
+}
+.label-telefono {
+    grid-column: 1;
+    font-family: "Verdana";
+    font-size: 30px;
+    grid-row: 10/11;
+}
+.Input-telefono {
+    grid-column: 1;
+    color: none;
+    font-family: "Verdana";
+    font-size: 25px;
+    grid-row: 11/13;
+    border: none;
+    background-color: #FAD089;
+    border-bottom: 3px solid #80bebf;
+    transition: 0.5s;
+}
+
+.label-contraseña {
+    grid-column: 1;
+    font-family: "Verdana";
+    font-size: 30px;
+    grid-row: 14/15;
+}
+.Input-contraseña {
+    grid-column: 1;
+    color: none;
+    font-family: "Verdana";
+    font-size: 25px;
+    grid-row: 15/17;
+    border: none;
+    background-color: #FAD089;
+    border-bottom: 3px solid #80bebf;
+    transition: 0.5s;
+}
+
+.form-btn {
+    padding: 5px;
+    font-size: 30px;
+    grid-row: 18/20;
+    height: 100%;
+    width: 100%;
+    border-style: none;
+    background-color: #80bebf;
+    transition: 0.5s;
+}
+
+.Input-email:hover {
+    transform: scale(1.04 , 1.04)
+}
+.Input-nombre:hover {
+    transform: scale(1.04 , 1.04)
+}
+.Input-telefono:hover { 
+    transform: scale(1.04 , 1.04)
+}
+.Input-contraseña:hover { 
+    transform: scale(1.04 , 1.04)
+}
+.form-btn:hover{
+    cursor: pointer;
+    background-color: hsl(181, 33%, 80%);
+    transform: scale(1.04 , 1.04)    
+}
+
+
+.Input-email:focus {
+    outline: none;
+}
+.Input-nombre:focus {
+    outline: none;
+}
+.Input-telefono:focus { 
+    outline: none; 
+}
+.Input-contraseña:focus { 
+    outline: none;
+    
+}
+
+
+
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

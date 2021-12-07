@@ -1,0 +1,114 @@
+html {
+    height: max-content;
+    
+}
+body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #f79326;
+    
+}
+.Cambiar_congraseña-grid {
+    height: 900px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    
+}
+.form_conteiner_grid {
+    align-self: center;
+    grid-column: 2;
+}
+.form_box {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(14, 1fr);
+    height: 400px;
+    background-color:#FAD089; 
+    border-radius: 20px;
+    border: 10px solid #3B8183;
+}
+#form_title {
+    font-family: "Verdana";
+    font-size: 30px;
+    grid-column: 1;
+    margin: 10px;
+    padding: 0px;
+    grid-row: 1;
+    justify-self: center;
+}
+.label-nueva-contraseña {
+    
+    margin-top: 10px;
+    font-family: "Verdana";
+    font-size: 30px;
+    
+}
+.Input-nueva-contraseña {
+    grid-row: 4/6;
+    grid-column: 1;
+    color: none;
+    font-family: "Verdana";
+    font-size: 25px;
+    border: none;
+    background-color: #FAD089;
+    border-bottom: 3px solid #80bebf;
+    transition: 0.5s;
+}
+
+.label-repetir_contraseña {
+    grid-column: 1;
+    margin-top: 10px;
+    font-family: "Verdana";
+    font-size: 30px;
+    grid-row: 7/9;
+}
+.Input-repetir_contraseña {
+    grid-column: 1;
+    color: none;
+    font-family: "Verdana";
+    font-size: 25px;
+    grid-row: 9/11;
+    border: none;
+    background-color: #FAD089;
+    border-bottom: 3px solid #80bebf;
+    transition: 0.5s;
+}
+
+
+
+
+.form-btn {
+    padding: 5px;
+    font-size: 30px;
+    grid-row: 12/15;
+    height: 100%;
+    width: 100%;
+    border-style: none;
+    background-color: #80bebf;
+    transition: 0.5s;
+}
+
+.Input-ubicacion:hover {
+    transform: scale(1.04 , 1.04)
+}
+.Input-nombre:hover {
+    transform: scale(1.04 , 1.04)
+}
+
+.form-btn:hover{
+    cursor: pointer;
+    background-color: hsl(181, 33%, 80%);
+    transform: scale(1.04 , 1.04)    
+}
+
+
+.Input-ubicacion:focus {
+    outline: none;
+}
+.Input-nombre:focus {
+    outline: none;
+}
+
