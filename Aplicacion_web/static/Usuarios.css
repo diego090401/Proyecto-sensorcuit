@@ -1,0 +1,131 @@
+.Usuario-grid {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat( 40, 1fr ) ;
+    grid-template-rows: repeat(40, 1fr) ;
+} 
+
+.form_box {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-row: 5/35;
+    grid-column: 10/30;
+    grid-template-rows: repeat(20,1fr);
+    grid-template-columns: repeat(1,1fr);
+    background-color:#FAD089; 
+    border-radius: 20px;
+    border: 10px solid #3B8183;
+
+}
+#form_title {
+    font-family: "Verdana";
+    font-size: 30px;
+    grid-column: 1;
+    margin: 10px;
+    padding: 0px;
+    grid-row: 1;
+    justify-self: center;
+}
+.label-nombre {
+    grid-column: 1;
+    font-family: "Verdana";
+    font-size: 30px;
+}
+.Input-nombre {
+    grid-column: 1;
+    grid-row: 4/6;
+    color: none;
+    font-family: "Verdana";
+    font-size: 25px;
+    border: none;
+    background-color: #FAD089;
+    border-bottom: 3px solid #80bebf;
+    transition: 0.5s;
+}
+.label-numero {
+    grid-row: 7/9;
+    grid-column: 1;
+    font-family: "Verdana";
+    font-size: 30px;
+}
+.Input-numero {
+    grid-row: 9/11;
+    grid-column: 1;
+    color: none;
+    font-family: "Verdana";
+    font-size: 25px;
+    border: none;
+    background-color: #FAD089;
+    border-bottom: 3px solid #80bebf;
+    transition: 0.5s;
+}
+.form-datos-btn {
+    grid-row: 12/15;
+    grid-column: 1;
+    background-color: #3B8183;
+}
+.form-contraseña-btn {
+    grid-column: 1;
+    grid-row: 15/18;
+    background-color: #3B8183
+}
+.form-eliminar-btn{
+    grid-row: 18/21 ;
+    grid-column: 1;
+    background-color: #ff5050 ;
+}
+
+.Input-nombre:hover {
+    transform: scale(1.04 , 1.04)
+}
+.Input-numero:hover { 
+    transform: scale(1.04 , 1.04)
+}
+
+.Input-numero:focus {
+    outline: none; }
+
+.Input-telefono:focus { 
+    outline: none;
+}
+
+input[type=submit] {
+
+    font-family: "Verdana";
+    font-size: 20px; 
+    padding: 5px;
+    height: 90%;
+    width: 100%;
+    border-style: none;
+    transition: 0.5s;
+    border-radius: 10px;    
+}
+.form-datos-btn:hover {
+    
+    cursor: pointer;
+    background-color: hsl(181, 33%, 80%);
+    transform: scale(1.04 , 1.04)
+}
+.form-contraseña-btn:hover {
+
+    cursor: pointer;
+    background-color: hsl(181, 33%, 80%);
+    transform: scale(1.04 , 1.04)
+}
+.form-eliminar-btn:hover {
+
+    cursor: pointer;
+    background-color:#FF8787 ;
+    transform: scale(1.04 , 1.04)
+}
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

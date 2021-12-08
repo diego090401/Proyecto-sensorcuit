@@ -1,0 +1,35 @@
+{% extends 'Base_sistema.html' %}
+{% block css_link %}
+<link rel="stylesheet" href="{{ url_for('static', filename = 'Sensores.css')}}">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+{% endblock %}
+{% block content %}
+<div class="content-grid">
+    <p class = "sensores-txt"> Sensores activos</p>
+    <div class="table-div">
+        <div class="sensor-div">
+            <table class = "sensor-table">
+
+                <tr class = "row">
+                    <th class= "column" id="column-id">#</th>
+                    <th class= "column" id="column-author">Fecha </th>
+                    <th class= "column" id="column-title">Ubicación</th>
+                    <th class= "column" id="column-action">Descripción</th>
+
+                </tr>
+                <tr class = "row">
+                    <td >Example</td>
+                    <td>Example</td>
+                    <td>Example</td>
+                    <td>Example</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <form action="/Añadir_sensor" class="form"> 
+        <input type="submit" value="Nuevo" class="form-btn"" >
+    </form>
+</div>
+
+{% endblock %}
