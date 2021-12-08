@@ -45,4 +45,5 @@ def Alertas ():
 @app.route("/Usuario")
 def USuario ():
    return render_template("Usuario.html")
-   
+if __name__ == "__main__" : 
+   app.run(debug=True)
