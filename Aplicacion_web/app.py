@@ -29,3 +29,21 @@ def Editar_sensor ():
 @app.route("/Cambiar_contraseña")
 def Cambiar_contraseña ():
    return render_template ("Cambiar_contraseña.html")
+
+@app.route("/Development")
+def Development ():
+   return render_template ("Base_sistema.html")
+@app.route("/Resumen")
+def Resumen ():
+   return render_template("Resumen.html")
+@app.route("/Sensores")
+def Sensores ():
+   return render_template("Sensores.html")
+@app.route("/Alertas")
+def Alertas ():
+   return render_template("Alertas.html")
+@app.route("/Usuario")
+def USuario ():
+   return render_template("Usuario.html")
+if __name__ == "__main__" : 
+   app.run(debug=True)

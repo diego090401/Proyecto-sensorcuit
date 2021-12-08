@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'Base_sistema.css')}}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="shortcut icon" href="favicon.png">
+    {% block css_link %} {% endblock %}
+    <title>{{ Titulo }}</title>
+</head>
+<body>
+    <div class="page-grid">
+        <header>
+            <div class="header-grid">
+                
+                <div class="Logo">
+                    <img src="https://i.ibb.co/BKJz6SY/Iniciar-sesi-n-1-removebg-preview.png" alt="Iniciar-sesi-n-1-removebg-preview" >
+                </div>
+                <a href="Inicio" class="Salir-btn">
+
+                    <p class="Salir-txt">Salir</p>
+                </a>
+
+            </div>
+        </header>
+        <div class="contenido-grid">
+            <aside>
+                <div class="aside-grid"  >
+                    <a href="/Resumen">
+                        <div class="Resumen-btn">
+                            <p class="Aside-txt">Resumen<p>
+                        </div>
+                    </a>
+                    <a href="/Sensores">
+                        <div class="Sensores-btn">
+                            <p class="Aside-txt">Sensores<p>
+                        </div>
+                    </a>
+                    <a href="/Alertas">
+                        <div class="Alertas-btn">
+                            <p class="Aside-txt">Alertas<p>
+                        </div>
+                    </a>
+                    <a href="/Usuario">
+                        <div class="Usuario-btn">
+                            <p class="Aside-txt">Usuario<p>
+                        </div>
+                    </a>
+                </div>
+            </aside>
+            <section class="content">
+                {% block content %} {% endblock %}
+            </section>
+        </div>
+        
+    </div>     
+</body>

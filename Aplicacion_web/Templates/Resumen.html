@@ -1,0 +1,66 @@
+{% extends 'Base_sistema.html' %}
+{% block css_link %}
+<link rel="stylesheet" href="{{ url_for('static', filename = 'Resumen.css')}}">
+{% endblock %}
+
+{% block content %}
+<div class="content-grid">
+    <a class= "refresh-btn" href="/Sensores">
+        <div class="refresh-btn-div">
+            <i style="font-size:24px" class="fa">&#xf021;
+            </i>
+        </div>
+    </a>
+    <div class="alertas-grid">
+
+        <p class = "alertas-txt">
+            Alertas activas
+        </p>
+        <div class="alertas-div">
+            <table class = "alertas-table">
+
+                <tr class = "row">
+                    <th class= "column" id="column-id">#</th>
+                    <th class= "column" id="column-author">Fecha </th>
+                    <th class= "column" id="column-title">Ubicación</th>
+                    <th class= "column" id="column-action">Descripción</th>
+
+                </tr>
+                <tr class = "row">
+                    <td >Example</td>
+                    <td>Example</td>
+                    <td>Example</td>
+                    <td>Example</td>
+                </tr>
+
+
+            </table>
+        </div>
+    </div>
+    <div class="datos-grid">
+        <p class="datos-txt"> Datos </p>
+        <div class="table-div">
+            <table class = "datos-table">
+
+                <tr class = "row">
+                    <th class= "column" id="column-id">id del sensor</th>
+                    <th class= "column" id="column-author">Fecha </th>
+                    <th class= "column" id="column-title">Temperatura</th>
+                    <th class= "column" id="column-action">Concentración</th>
+                    <th class= "column" id="column-time">Temperatura</th>
+                    <th class= "column" id="column-content">Flama</th>
+                </tr>
+                <tr class = "row">
+                    <td >Example</td>
+                    <td>Example</td>
+                    <td>Example</td>
+                    <td>Example</td>
+                    <td>Example</td>
+                    <td>cvbfcvb</td>
+
+
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

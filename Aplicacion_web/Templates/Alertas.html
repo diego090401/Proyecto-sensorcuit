@@ -1,0 +1,45 @@
+{% extends 'Base_sistema.html' %}
+{% block css_link %}
+<link rel="stylesheet" href="{{ url_for('static', filename = 'Alertas.css')}}">
+
+
+{% endblock %}
+{% block content %}
+<div class="content-grid">
+    <a class= "refresh-btn" href="/Alertas">
+        <div class="refresh-btn-div">
+            <i style="font-size:24px" class="fa">&#xf021;
+            </i>
+        </div>
+    </a>
+    <p class = "Alertas-txt"> Alertas</p>
+    <div class="table-div">
+        <div class="Alertas-div">
+            <table class = "Alertas-table">
+
+                <tr class = "row">
+                    <th class= "column" id="column-id">#</th>
+                    <th class= "column" id="column-author">Fecha </th>
+                    <th class= "column" id="column-title">Ubicación</th>
+                    <th class= "column" id="column-action">Descripción</th>
+                    <th class= "column" id="column-action"></th>
+
+                </tr>
+                <tr class = "row">
+                    <td >Example</td>
+                    <td>Example</td>
+                    <td>Example</td>
+                    <td>Example</td>
+                    <td>
+                        <form  class="form"> 
+                            <input type="submit" value="desactivar" class="form-btn" >
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
