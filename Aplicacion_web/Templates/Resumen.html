@@ -26,12 +26,14 @@
                     <th class= "column" id="column-action">Descripción</th>
 
                 </tr>
+                {% for Alerta in Tabla_alertas_activas %}
                 <tr class = "row">
-                    <td >Example</td>
-                    <td>Example</td>
-                    <td>Example</td>
-                    <td>Example</td>
+                    <td >{{ Alerta.Alerta_id }}</td>
+                    <td>{{ Alerta.Fecha_alerta }}</td>
+                    <td>{{ Alerta.Alerta_id }}</td>
+                    <td>{{ Alerta.Descripcion }}</td>
                 </tr>
+                {% endfor %}
 
 
             </table>
@@ -47,17 +49,16 @@
                     <th class= "column" id="column-author">Fecha </th>
                     <th class= "column" id="column-title">Temperatura</th>
                     <th class= "column" id="column-action">Concentración</th>
-                    <th class= "column" id="column-time">Temperatura</th>
                     <th class= "column" id="column-content">Flama</th>
                 </tr>
+                {% for Dato in Datos_sensores %}
                 <tr class = "row">
-                    <td >Example</td>
-                    <td>Example</td>
-                    <td>Example</td>
-                    <td>Example</td>
-                    <td>Example</td>
-                    <td>cvbfcvb</td>
-
+                    <td>{{ Dato.idSensor }}</td>
+                    <td >{{ Dato.Fecha_informacion }}</td>
+                    <td>{{ Dato.Temperatura }}</td>
+                    <td>{{ Dato.Concentracion_humo }}</td>
+                    <td>{{ Dato.Flama }}</td>
+                {% endfor %}
 
             </table>
         </div>

@@ -24,10 +24,6 @@ char password[] = "HepsuMI0QeS223Cphghh";       // Contraseña del usuario para 
 void setup() {
   Serial.begin(9600);
   Serial.println("Iniciando conexión");
-  Serial.print("Configurando IP estática a : ");
-//  Serial.print(F("Setting static ip to : "));
-  Serial.println(ip);
-  Serial.println("");
   Serial.print("Conectando a la red Wifi con SSID : ");
   Serial.println(ssid);
   WiFi.begin(ssid, pass);           //Inicia la conexión con la red o router
@@ -42,10 +38,10 @@ void setup() {
     errorconexion=true;
   } else {
     Serial.println("Módulo conectado a WiFi");
-    muestra_mac();          //Muestra la MAC asignada
     Serial.print("IP asignada: ");
     Serial.print(WiFi.localIP());   //Muestra la IP asignada real
     Serial.println("");
-    Serial.println("Conectando a base de datos");
+    Serial.println("Conectando a base de datos"); 
+  }
       
 }
