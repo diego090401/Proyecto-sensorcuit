@@ -85,10 +85,10 @@
     transform: scale(1.04 , 1.04)
 }
 
-.Input-numero:focus {
+.Input-nombre:focus {
     outline: none; }
 
-.Input-telefono:focus { 
+.Input-numero:focus { 
     outline: none;
 }
 
@@ -121,6 +121,7 @@ input[type=submit] {
     background-color:#FF8787 ;
     transform: scale(1.04 , 1.04)
 }
+
 input[type=number] {
     -moz-appearance: textfield;
   }
@@ -129,3 +130,6 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+input[type=text] {
+    -moz-appearance: textfield;
+  }

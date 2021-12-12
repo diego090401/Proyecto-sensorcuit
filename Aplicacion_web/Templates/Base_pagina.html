@@ -1,1 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'Base_pagina.css')}}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="shortcut icon" href="favicon.png">
+    {% block css_link %} {% endblock %}
+    <title>{{ Titulo }}</title>
+</head>
+<body>
+    <div class="page-grid">
+        <div class="header">
+            <div class="logo">
+                <img src="https://i.ibb.co/BKJz6SY/Iniciar-sesi-n-1-removebg-preview.png" alt="Iniciar-sesi-n-1-removebg-preview" class  = "Logo-img">
+            </div>
+            <a href="/Iniciar_sesion"class="Iniciar_sesion-btn">
+                <div class="Iniciar_sesion-txt" >
+                    <p>Iniciar sesión</p>
+                </div>
+            </a>
+            <a href="Registrarse" class="Registrarse-btn">
+                <div class="Registrarse-txt">
+                    <p>Registrarse</p>
+
+                </div>
+            </a>
+            <div class="Opciones">
+                <div class="Inicio">
+                    <a href="/Inico"class = "Inicio-text">Inicio</a>
+                </div>
+                <div class="Estadisticas">
+                    <a href="/Estadisticas" class = "Estadisticas-text">Estadisticas</a>
+                </div>
+                <div class="Recomendaciones">
+                    <a href="/Recomendaciones" class = "Recomendaciones-text">Recomendaciones</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="Contenido">
+            {% block Contenido %} {% endblock %}
+        </div>
+        
+    </div>
+</body>

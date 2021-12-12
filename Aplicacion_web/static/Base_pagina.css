@@ -1,0 +1,163 @@
+body {
+    font-family: "Verdana";
+    
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: aliceblue;
+}
+a {
+    color: black;
+    text-decoration: none;
+    text-emphasis: none;
+}
+a:visited {
+    
+    color: black;
+}
+img {
+
+    width: 197px;
+    height: 111.0px ;
+}
+.logo-img {
+    margin-right: 10px;
+    grid-row: 2;
+}
+.page-grid{ 
+    
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #f4f3f3;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(20,1fr);
+}
+.header {
+
+    
+    display: grid;
+    grid-template-columns: repeat(32,1fr),minmax(5px, 1fr);
+    grid-template-rows: repeat(20,minmax(5px, 1fr));
+    width: 100%;
+    height: 100%;
+    background-color: #FAD089;
+    grid-row: 1/4;
+    grid-column: 1/13;
+}
+.logo {
+    display: grid;
+    
+    width: 100%;
+    height: 100%;
+    grid-row: 2/14;
+    grid-column: 1/10;
+}
+.Iniciar_sesion-btn {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: end;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: #80bebf;
+    grid-row: 4/13;
+    grid-column: 25/28;
+}
+.Registrarse-btn {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: end;
+    margin-right: 20px;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: #80bebf;
+    grid-row: 4/13;
+    grid-column: 29/32;
+}
+.Opciones{
+    min-height: max-content;
+    line-height : 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+    width: 100%;
+    height: 100%;
+    background-color: #ff9c5b;
+    grid-row: 16/21;
+    grid-column: 1/33;
+    
+}
+.Inicio {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: end;
+    grid-row: 1;
+    grid-column: 1;
+    
+}
+.Estadisticas{ 
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: end;;
+    width: 100%;
+    height: 100%;
+    
+    grid-row: 1;
+    grid-column: 2;
+    
+}
+.Recomendaciones {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: end;
+    grid-row: 1;
+    grid-column: 3;
+    
+}
+.Contenido {
+    width: 100%;
+    height: 100%;
+    grid-column: 1/13;
+    grid-row: 4/21;
+}
+.Registrarse-btn:hover {
+    background-color: hsl(181, 33%, 80%);
+    transform: scale(1.04 , 1.04)
+}
+.Iniciar_sesion-btn:hover {
+    background-color: hsl(181, 33%, 80%);
+    transform: scale(1.04 , 1.04)
+} 
+.Inicio-text {
+    margin-top: 7px;
+    transition: 0.5s;
+}
+.Estadisticas-text {
+    margin-top: 7px;
+    transition: 0.5s;
+}
+.Recomendaciones-text {
+    margin-top: 7px;
+    transition: 0.5s;
+}
+.Inicio-text:hover {
+    transform: scale(1.04 , 1.04); }
+.Estadisticas-text:hover {
+    transform: scale(1.04 , 1.04);
+}
+.Recomendaciones-text:hover {
+    transform: scale(1.04 , 1.04);
+}
