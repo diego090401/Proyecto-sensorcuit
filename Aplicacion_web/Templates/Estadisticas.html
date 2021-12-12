@@ -1,0 +1,15 @@
+{% extends "Base_pagina.html"  %}
+{% block css_link%}
+ <link rel="stylesheet" href="{{ url_for('static', filename = 'Estadisticas.css')}}">
+{% endblock %}
+{%  block Contenido%} 
+<div class="Contenido-grid">
+    <div class="Titulo">
+    </div>
+    <div class="div-2021"></div>
+    <div class="div-2020"></div>
+    <div class="div-2019"></div>
+    <div class="div-2018"></div>
+    <div class="div-2017"></div>
+</div>
+{% endblock %}

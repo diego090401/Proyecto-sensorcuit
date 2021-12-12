@@ -24,7 +24,7 @@
                     <th class= "column" id="column-action"></th>
 
                 </tr>
-                {% for Alerta in Tabla_Alertas %}
+                {% for Alerta in Tabla_alerta%}
                 <tr class = "row">
                     <td >{{ Alerta.Alerta_id }}</td>
                     <td>{{ Alerta.Fecha_alerta }}</td>
@@ -33,7 +33,16 @@
                     <td>
                         <form  method="post" class="form"> 
                             <input value = "{{ Alerta.Alerta_id}}" type="hidden" name="Alerta_id">
+
+                            {% if Alerta.Estatus == 0 %}
+                            <input value = "Activar" type="hidden" name="Accion">
+                            <input type="submit" value="activar" class="form-btn" id = "activar-btn">
+                            {% endif %}
+
+                            {% if Alerta.Estatus == 1 %}
+                            <input value = "Desactivar" type="hidden" name="Accion">
                             <input type="submit" value="desactivar" class="form-btn" id = "desactivar-btn">
+                            {% endif %}
                         </form>
                     </td>
                 </tr>

@@ -1,21 +1,21 @@
 {% extends 'Base_sistema.html' %}
 {% block css_link %}
-<link rel="stylesheet" href="{{ url_for('static', filename = 'Usuarios.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename = 'Usuario.css')}}">
 {% endblock %}
 
 {% block content %}
 <div class = "Usuario-grid">
 
-    <form action="" method="post" class="form_box">
+    <form method="post" class="form_box">
 
         <h1 id = "form_title">Usuario</h1>
         <label class = "label-nombre">Nombre</label>
-        <input type="text" class = "Input-nombre" placeholder="&#xf2b9; Nombre" style="font-family:Arial, FontAwesome"  >
+        <input type="text" class = "Input-nombre" placeholder="&#xf2b9; {{ Nombre }}" style="font-family:Arial, FontAwesome"   name = "Nombre">
         <label class = "label-numero">Número </label>
-        <input type="number" class = "Input-numero" placeholder="&#xf095; Número de telefono" style="font-family:Arial, FontAwesome"  >
-        <input type="submit" value="Actualizar datos" class="form-datos-btn" >
-        <input type="submit" value="Cambiar contraseña" class="form-contraseña-btn">
-        <input type="submit" value="Eliminar usuario" class="form-eliminar-btn">
+        <input type="number" class = "Input-numero" placeholder="&#xf095; {{ Numero }}" style="font-family:Arial, FontAwesome"   name = "Numero"  >
+        <input type="submit" value="Actualizar datos" class="form-datos-btn" name = "Accion" >
+        <input type="submit" value="Cambiar contraseña" class="form-contraseña-btn" name="Accion">
+        <input type="submit" value="Eliminar usuario" class="form-eliminar-btn" name = "Accion">
 
 
     </form>

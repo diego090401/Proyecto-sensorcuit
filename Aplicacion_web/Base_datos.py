@@ -20,7 +20,7 @@ class DATABASE():
 
         return Iniciar_sesion
     def Registrarse(Correo, Contraseña,Numero_telefono, Nombre, DATAB= DATAB, cursor=cursor):
-        Query = "insert into Usuario( Correo, Contraseña, Numero_telefono, Nombre ) values (%s, %s, %s)"
+        Query = "insert into Usuario( Correo, Contraseña, Numero_telefono, Nombre ) values (%s, %s, %s, %s)"
         Values = (Correo, Contraseña, Numero_telefono, Nombre)
         cursor.execute(Query,Values)
         DATAB.commit()
@@ -93,3 +93,4 @@ class DATABASE():
         Values = (Usuario_id,)
         cursor.execute(Query,Values)
         DATAB.commit()
+

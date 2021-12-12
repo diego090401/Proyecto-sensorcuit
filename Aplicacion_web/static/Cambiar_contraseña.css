@@ -91,10 +91,10 @@ body {
     transition: 0.5s;
 }
 
-.Input-ubicacion:hover {
+.Input-nueva-contraseña:hover {
     transform: scale(1.04 , 1.04)
 }
-.Input-nombre:hover {
+.Input-repetir_contraseña:hover {
     transform: scale(1.04 , 1.04)
 }
 
@@ -105,10 +105,10 @@ body {
 }
 
 
-.Input-ubicacion:focus {
+.Input-repetir_contraseña:focus {
     outline: none;
 }
-.Input-nombre:focus {
+.Input-nueva-contraseña:focus {
     outline: none;
 }
 
