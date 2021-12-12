@@ -21,21 +21,23 @@
                     <th class= "column" id="column-id">#</th>
                     <th class= "column" id="column-author">Fecha </th>
                     <th class= "column" id="column-title">Ubicación</th>
-                    <th class= "column" id="column-action">Descripción</th>
                     <th class= "column" id="column-action"></th>
 
                 </tr>
+                {% for Alerta in Tabla_Alertas %}
                 <tr class = "row">
-                    <td >Example</td>
-                    <td>Example</td>
-                    <td>Example</td>
-                    <td>Example</td>
+                    <td >{{ Alerta.Alerta_id }}</td>
+                    <td>{{ Alerta.Fecha_alerta }}</td>
+                    <td>{{ Alerta.Descripcion }}</td>
+
                     <td>
-                        <form  class="form"> 
-                            <input type="submit" value="desactivar" class="form-btn" >
+                        <form  method="post" class="form"> 
+                            <input value = "{{ Alerta.Alerta_id}}" type="hidden" name="Alerta_id">
+                            <input type="submit" value="desactivar" class="form-btn" id = "desactivar-btn">
                         </form>
                     </td>
                 </tr>
+                {% endfor %}
             </table>
         </div>
     </div>

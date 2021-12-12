@@ -13,17 +13,19 @@
 
                 <tr class = "row">
                     <th class= "column" id="column-id">#</th>
-                    <th class= "column" id="column-author">Fecha </th>
+                    <th class= "column" id="column-author"> Registro </th>
                     <th class= "column" id="column-title">Ubicación</th>
-                    <th class= "column" id="column-action">Descripción</th>
+                    <th class= "column" id="column-action">Nombre</th>
 
                 </tr>
+                {% for Sensor in Sensores_activos %}
                 <tr class = "row">
-                    <td >Example</td>
-                    <td>Example</td>
-                    <td>Example</td>
-                    <td>Example</td>
+                    <td >{{ Sensor.idSensor }}</td>
+                    <td>{{ Sensor.Fecha_ingreso }}</td>
+                    <td>{{ Sensor.Ubicacion }}</td>
+                    <td>{{ Sensor.Nombre }}</td>
                 </tr>
+                {% endfor %}
             </table>
         </div>
     </div>
