@@ -52,9 +52,13 @@ def Registrarse ():
       Numero =  request.form.get("Numero")
       Correo =  request.form.get("Correo")
       Nombre = request.form.get("Nombre")
-      db.Registrarse(Correo, Contraseña, Numero, Nombre)
-      return redirect (url_for("Iniciar_sesion"))
-
+      Database_user = db.Iniciar_sesion(Correo, Contraseña)
+      
+      if type(Database_user) != dict :
+         db.Registrarse(Correo, Contraseña, Numero, Nombre)
+         return redirect (url_for("Iniciar_sesion"))
+      else:
+         return redirect(url_for("Registrarse"))
 @app.route("/Añadir_sensor", methods=["GET", "POST"])
 def Añadir_sensor ():
    
