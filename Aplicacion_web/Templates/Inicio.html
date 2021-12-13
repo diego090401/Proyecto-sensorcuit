@@ -1,1 +1,23 @@
 {%extends "Base_pagina.html"  %}
+{% block css_link %} 
+<link rel="stylesheet" href="{{ url_for('static', filename = 'Inicio.css')}}">
+<link rel="icon" href="https://i.ibb.co/hfs8qvX/Favicon-Photo-Room.png" alt="Favicon-Photo-Room"  type="image/x-icon">
+{% endblock %}
+{% block Contenido %} 
+<div class="Contenido-grid">
+
+    <div class="Informacion">
+        <p class= "Textos-t">Información</p>
+        <p class = "Textos">Según la Unidad de Prevención e Investigación de Incendios del Benemérito Cuerpo de Bomberos de Costa Rica, la mayoría de las causas que provocaron un incendio durante el 2020, se debió a un descuido. Los incendios se originaron por cortocircuitos, aparatos eléctricos, uso de velas o acumulación de gas. Tener un dispositivo que nos alerten en caso de incendio, podría salvar muchas vidas. Durante el año 2020, un total de 14 personas fallecieron a causa de un incendio en Costa Rica, las cuales se pudieron haber salvado disponiendo de un aparato que les alertara del peligro. Cientifikitos nace como una iniciativa de reducir estos accidentes diseñando un sistema de prevención de incendios con la más eficaz tecnología. Nuestro detector de humo permite obtener distinta información como lo son la temperatura, concentración de gas y presencia de una llama gracias a su disponibilidad de sensores; además cuenta con una página web que permite al usuario conocer el estado de los sensores y alertarlo de cualquier peligro donde sea que se encuentre.</p>
+    </div>
+    <div class="Quienes">
+        <p class= "Textos-t">¿Quiénes somos?</p>
+        <p class = "Textos">Somos un grupo de estudiantes del Científico de Alajuela que buscan innovar en el campo de la tecnología y mejoramiento en la calidad de vida costarricense a partir de los conocimientos de informática y programación adquiridos en nuestra institución</p>
+    </div>
+    <div class="Recursos-utilizados">
+        <p class= "Textos-t">Tecnologias utilizadas</p>
+        <p class = "Textos">A lo largo de este proyecto se ha utilizado html y css vanilla para crear la interfaz tanto de la página de información como del sistema web. La lógica detrás de las funcionalidades esta construida usando flask, con comunicación a una base de datos de MySQL que se encuentra en Amazon Web Services. Las funcionalidades de los sensores se produjeron empleando C++. Podrá encontrar toda la programación utilizada en este proyecto dando clic <a href="https://github.com/diego090401/Proyecto-sensorcuit" class = "github-link">aquí</a></p>
+    </div>
+
+</div>
+{% endblock %}

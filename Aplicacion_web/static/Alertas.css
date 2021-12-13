@@ -21,7 +21,11 @@ th, td {
     grid-column:4/38 ;
     border-radius: 10px;
 }
-
+.Alertas-div {
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+}
 .Alertas-txt {
     font-family: "Verdana";
     font-size: 50px;
@@ -29,6 +33,7 @@ th, td {
     grid-column: 4/20;
 }
 .Alertas-table {
+    overflow-y: scroll;
     table-layout: fixed;
     width: 100%;
     padding: 0px;

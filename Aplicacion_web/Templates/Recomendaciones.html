@@ -1,0 +1,59 @@
+{%extends "Base_pagina.html"  %}
+{% block css_link %} 
+<link rel="stylesheet" href="{{ url_for('static', filename = 'Recomendaciones.css')}}">
+{% endblock %}
+{% block Contenido %} 
+<div class="Contenido-grid">
+    <div class="Intro">
+        <p class = "Texto">Año con año decenas de costarricenses ponen en peligro su vida al enfrentarse a incendios en sus hogares. Tan solo en el año 2020 se registraron 918 incedios estructurales en el país; incendios que pudieron evitarse tomando las medidas adecuadas para su extinción. Sumado a esto, actualmente existen una gran cantidad de locales y comercios carentes de un sistema adecuado de prevención de incendios, provocando el aumento de estos números. La protección contra incendios toma un papel fundamental en nuestra supervivencia y la de nuestros seres queridos. El conocimiento y cualquier herramienta que nos permita reaccionar de manera rápida y eficaz ante estas situaciones debe ser tomada en cuenta.</p>
+    </div>
+
+    <div class="En-casa">
+        <p class= "Textos">En casa</p>
+        <ul>
+            <li>Mantener los dispositivos electrónicos desconectados al no ser utilizados</li>                                                
+            <li>No fume cerca de objetos propensos a incendiarse como la cama o cortinas</li>
+            <li>Las instalaciones eléctricas deben estar entubadas o canalizadas. Y deben contar con dispositivos de conexión a tierra a demás de ser revisadas por lo menos una vez al año</li>
+            <li>No utilice cables de conexión dañados o viejos</li>
+            <li>No conserve sustancias inflamables cerca de aparatos eléctricos</li>
+            <li>Mantenga siempre los aparatos generadores de fuego fuera del alcance de los niños</li>
+            <li>Lea las instrucciones de uso de los aparatos generadores de calor; cuando los use aléjelos de cualquier material combustible.</li>
+            <li>Mantener en un lugar ventilado y utilizar una conexión segura con mangueras especiales al tanque de gas en caso de cocinar de esta forma</li>
+            <li>No exponga a una sobrecarga el sistema eléctrico de su hogar</li>
+             
+        </ul>
+
+
+    </div>
+    <div class="Incendios-forestales">
+        <p class= "Textos">Incendios forestales</p>
+        <ul>
+            <li>No fume cerca de objetos propensos a incendiarse como la cama o cortinas</li>
+            <li>No sobrecargue el sistema eléctrico de su hogar</li>
+            <li>Las instalaciones eléctricas deben estar preferiblemente entubadas o canalizadas. Y deben contar con dispositivos de conexión a tierra a demás de ser revisadas por lo menos una vez al año</li>
+            <li>No utilice cables de conexión dañados o viejos</li>
+            <li>No conserve sustancias inflamables cerca de aparatos eléctricos</li>
+            <li>Mantenga siempre los aparatos generadores de fuego fuera del alcance de los niños</li>
+            <li>Lea las instrucciones de uso de los aparatos generadores de calor; cuando los use aléjelos de cualquier material combustible.</li>
+            <li>Mantener en un lugar ventilado y utilizar una conexión segura con mangueras especiales al tanque de gas en caso de cocinar de esta forma</li>
+            <li>Mantener los dispositivos electrónicos desconectados al no ser utilizados.</li>
+        </ul>
+    </div>
+    <div class="En-peligro">
+        <p class= "Textos">En peligro</p>
+        <ul>
+            <li>Seguir el plan de evacuación provisto por las instalaciones </li>                                                                               
+            <li>Dirigirse a las salidas más seguras de potencial propagación de fuego</li>
+            <li> Arrástrese hasta la salida para evitar las acumulaciones de gases en la parte alta de la habitación</li>                                                                                        
+            <li>No volver al lugar de fuego por objetos de valor</li>
+            <li>De forma preventiva se deben colocar las llaves de la casa en un lugar definido de fácil acceso                                                          
+            <li>Advertir a los vecinos de la emergencia </li>                                                                                                                    
+            <li>Los bomberos recomiendan no esconderse en lugares cerrados, pues se dificulta ser hallado e incrementa la posibilidad de morir, producto de la acumulación de monóxido de carbono que se presenta en lugares con poca ventilación</li>                                                                                                                                                                    
+            <li>Si queda atrapado busque alguna ventana, quiebre el vidrio por la parte más alta o esquinas y alerte a los vecinos y bomberos con su voz o objetos livianos</li>
+        </ul>
+    </div>
+</div>
+
+    
+
+{% endblock %}
