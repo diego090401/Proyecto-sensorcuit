@@ -40,6 +40,7 @@ th, td {
 
 }
 .table-div {
+    overflow-y: scroll;
     border-radius: 10px;
     background-color: #fad089;
     grid-row: 2/11;
@@ -74,6 +75,7 @@ th, td {
     grid-row: 1;
 }
 .alertas-div {
+    overflow-y: scroll;
     border-radius: 10px;
     background-color: #fad089;
     grid-column: 1/5;

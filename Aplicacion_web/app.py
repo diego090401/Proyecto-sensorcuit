@@ -8,12 +8,13 @@ app = Flask(__name__)
 
 app.config['SECRET_KEY'] = "qzwxecadsfrtvng"
 
+
 @app.route("/")
 def root ():
    return redirect("Inicio")
 @app.route("/Inicio", methods = ["GET", "POST"])
 def Inicio ():
-   return render_template("Inicio.html")
+   return render_template("Inicio.html", Titulo="Inicio")
 
 @app.route("/Iniciar_sesion", methods=["GET", "POST"])
 def Iniciar_sesion () :
@@ -35,7 +36,7 @@ def Iniciar_sesion () :
             return redirect(url_for("Resumen"))
          else: 
             return redirect(url_for('Iniciar_sesion'))
-      return redirect(url_for('Iniciar_sesion'))
+      return redirect(url_for('Inicio'))
       
      
       
@@ -181,7 +182,13 @@ def Usuario ():
    
 @app.route("/Estadisticas", methods = ["GET"])
 def Estadisticas () :
-   return render_template("Estadisticas.html")
+   return render_template("Estadisticas.html",Titulo="Estadisticas")
+
+@app.route("/Recomendaciones", methods = ["GET"])
+def Recomendaciones () :
+   return render_template("Recomendaciones.html", Titulo="Recomendaciones")
+  
+
 @app.route("/Chafa")
 def Chafa () :
    session.clear()
@@ -193,4 +200,4 @@ def Chafa () :
 def page_not_found(e):
    
     return redirect(url_for("Inicio"))
-  
+    
